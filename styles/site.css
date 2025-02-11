@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: rgb(243, 210, 216);
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.intro {
+    margin-top: 4em;
+}
+
+.illustration {
+    margin: 8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: end;
+
+}
+
+.characters {
+    border-radius: 35px;
+    width: 50%;
+}
+
+.eyes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1ex;
+    font-size: 3em;
+    justify-content: space-around;
+    border-radius: 50%
+}
+
+.kevinglasses {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6.2ex;
+    margin-right: 0.6em;
+    font-size: 1em;
+    border-radius: 50%;
+}
+
+.left-glasses {
+    height: 2em;
+    width: 2.1em;
+    border: 2.5px solid black;
+    border-radius: 100%;
+}
+
+.left-glasses p {
+    width: 50%;
+    position: relative;
+    top: 0.5em;
+    float: right;
+    border-radius: 400%;
+}
+
+.right-glasses p {
+    width: 50%;
+    position: relative;
+    top: 0.5em;
+    float: left;
+    margin-left: 0.4em;
+    border-radius: 400%;
+}
+
+.right-glasses {
+    height: 2em;
+    width: 2.1em;
+    border: 2.5px solid black;
+    border-radius: 100%;
+}
+
+.center-glasses {
+    height: 0em;
+    width: 1.4em;
+    border-bottom: 2.5px solid black;
+}
+
+.smile {
+    position: relative;
+    top: -.3em;
+    width: 1.5em;
+    height: 0.75em;
+    border: 2.5px solid black;
+    border-radius: 20px 20px 100px 100px;
+    margin-right: 2.5em;
+    margin-left: 2.3em
+}
+
+.smile-bottom {
+    position: relative;
+    top: -.6em;
+    width: 1em;
+    height: 0.50em;
+    border: 2.5px solid black;
+    border-top: 3px solid rgb(243, 210, 216);
+    border-radius: 20px 20px 100px 100px;
+    margin-right: 3em;
+    margin-left: 2em;
+}
+
+.kevin {
+    height: 10em;
+    width: 10.5em;
+    border: 3.5px solid rgb(102, 26, 26);
+}
+
+
+
+.laura {
+    height: 9.5em;
+    width: 10em;
+    border: 3.5px solid rgb(236, 99, 131);
+}
