@@ -20,6 +20,28 @@
     border-radius: 200%;
 }
 
+.space-above {
+    margin-top: 5em;
+}
+
+.pagesection {
+    height: 100vh;
+}
+
+.smallcontent {
+    width: 50vw;
+    margin: auto;
+}
+
+.center-block {
+    margin: auto;
+}
+
+.center-flex {
+    justify-content: center;
+    align-content: center;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -379,13 +401,10 @@
     border-color: rgb(102, 26, 26);
 }
 
-
 .kevin {
     height: 10em;
     width: 10.5em;
     border: 3.5px solid rgb(102, 26, 26);
-
-    /* background-color: rgb(102, 26, 26); */
 }
 
 @keyframes laurabody {
@@ -396,6 +415,73 @@
     90%  {transform: translate(0px,4px);}
     95%  {transform: translate(0px,-2px)  ;}
     100% {transform: translate(0, 4px) rotate(0deg);}
+}
+
+@keyframes laurawiggle {
+    0%   {transform: translate(0, 4px) rotate(0deg) ;}
+    25%  {transform: translate(-10px,-10px) rotate(-10deg) ;}
+    50%   {transform: translate(0, 4px) rotate(0deg);}
+    75%   {transform: translate(-10px, -10px) rotate(10deg);}
+    100%   {transform: translate(0, 4px) rotate(0deg) ;}
+}
+
+@keyframes lauraleftlegwiggle {
+    0%   {transform: translate(0,0) rotate(0);}
+    25%  {transform: translate(-10px, 10px) rotate(10deg) ;}
+    50%   {transform: translate(0,0) rotate(0);}
+    75%  {transform: translate(-10px,0) rotate(40deg);}
+    100%  {transform: translate(0 ,0) rotate(0);}
+}
+
+@keyframes laurarightlegwiggle {
+    0%   {transform: translate(0,0) rotate(0);}
+    25%  {transform: translate(10px,0) rotate(-40deg);}
+    50%  {transform: translate(0,0) rotate(0);}
+    75%  {transform: translate(24px, 8px) rotate(-10deg) ;}
+    100%  {transform: translate(0 ,0) rotate(0);}
+}
+
+.explore .laura {
+    animation: laurawiggle 6s infinite;
+    margin-top: 4em;
+    margin-bottom: -4em;
+}
+
+.explore .lauraarm.leftarm {
+    animation: kevinarm 6s infinite;
+}
+
+.explore .lauraarm.rightarm {
+    animation: lauraarm 6s infinite;
+    animation-delay: -3s;
+}
+
+.explore .lauraleg.leftleg {
+    animation: lauraleftlegwiggle 6s infinite;
+}
+
+.explore .lauraleg.rightleg {
+    animation: laurarightlegwiggle 6s infinite;
+}
+
+.explore .laurafoot {
+    left: -0.2em;
+}
+
+@keyframes bounce {
+    0%   {transform: translate(0, 0) rotate(0);}
+    65%  {transform: translate(0, 0) rotate(0);}
+    70%  {transform: translate(0,-30px) rotate(-3deg);}
+    75%  {transform: translate(0, 2px) rotate(1deg);}
+    80%  {transform: translate(0,-20px) rotate(-2deg);}
+    85%  {transform: translate(0, 2px) rotate(1deg);}
+    90%  {transform: translate(0, -5px) rotate(-1deg);}
+    95%  {transform: translate(0, 1px) rotate(0);}
+    100% {transform: translate(0, 0) rotate(0);}
+}
+
+.explore h1 {
+    animation: bounce 5s infinite;
 }
 
 .laura {
@@ -412,6 +498,12 @@
     left: 0.8em;
     height: 9.5em;
     width: 11em;
+}
+
+.explore .fillbody {
+    animation: laurawiggle 6s infinite;
+    left: -0.5em;
+    top: -5.25em;
 }
 
 .lauracolor {
@@ -604,4 +696,41 @@ a:link {
 .carousel img {
     width: 30vw;
     border-radius: 2%;
+}
+
+.navbutton-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.navbutton {
+    z-index: 1;
+    border: 3px solid rgb(120, 83, 83);
+    background-color: transparent;
+    border-radius: 20%;
+    padding: 1em;
+    width: 100%;
+}
+
+.navbuttonfill {
+    z-index: -1;
+    position: relative;
+    left: 13%;
+    top: -1.85em;
+    width: 100%;
+    height: 3.5em;
+    background-color: rgb(231, 209, 209);
+    border-radius: 20%;
+}
+
+.navbuttons {
+    width: 50%;
+    height: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
