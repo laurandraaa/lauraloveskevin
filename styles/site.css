@@ -463,6 +463,9 @@ a:link {
 
 .thisisus {
     height: 100vh;
+    width: 60vw;
+    margin: auto;
+    overflow-x: hidden;
 }
 
 .picturesection {
@@ -476,13 +479,13 @@ a:link {
 
 .poloroids {
     margin-top: 7em;
-    margin-left: 30em;
-    margin-right: 30em;
+    margin-left: 15em;
+    margin-right: 15em;
 }
 
 .poloroid {
     font-family: "Gamja Flower";
-    font-size: 1.75em;
+    font-size: 1.5em;
     border: 3px solid rgb(236, 99, 131);
     background-color: rgb(243, 210, 216);
     border-radius: 4%;
@@ -536,8 +539,7 @@ a:link {
     display: flex;
     flex-direction: column;
     height: 2vh;
-    width: 2em;
-    margin-left: 18em;
+    /* width: 2em; */
     animation: dinoskate 3s infinite;
     animation-timing-function: ease-in;
 }
@@ -558,8 +560,10 @@ a:link {
 }
 
 @keyframes dinoskate {
-    0% {transform: translate(0,0);}
-    100% {transform: translate(60em, 0);}
+    0% {transform: translate(-10%,0);}
+    10% {transform: translate(0,0);}
+    30% {transform: translate(2%,0);}
+    100% {transform: translate(130%, 0);}
 }
 
 
@@ -568,7 +572,7 @@ a:link {
     /* top: -2em; */
     margin: auto;
     margin-top: 6.75em;
-    width: 60em;
+    width: 100%;
     border-bottom: 2px solid rgb(120, 83, 83);
     box-shadow: 5px 4px 5px rgb(120, 83, 83)
 }
