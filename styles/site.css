@@ -2,7 +2,20 @@
     padding: 0;
     margin: 0;
     text-align: center;
-    background-color: rgb(243, 210, 216);
+    background-color: transparent;
+}
+
+.body {
+    background-color:rgb(243, 210, 216);
+}
+
+.round-borders {
+    border-radius: 200%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
 }
 
 .left {
@@ -105,22 +118,126 @@
     width: 1em;
     height: 0.50em;
     border: 2.5px solid black;
-    border-top: 3px solid rgb(243, 210, 216);
+    border-top: 3px solid transparent;
     border-radius: 20px 20px 100px 100px;
     margin-right: 3em;
     margin-left: 2em;
 }
 
+.legs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+    top: 1.1em;
+}
+
+.leg {
+    height: 3em;
+    width: 1em;
+    border: 3.5px solid;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+.foot {
+    position: relative;
+    top: 2.4em;
+    height: 1.25em;
+    width: 2em;
+    border: 3.5px solid;
+    border-radius: 100%;
+}
+
+.laurafoot {
+    left: -1.2em;
+    border-color: rgb(236, 99, 131)
+}
+
+.kevinfoot {
+    left: -0.2em;
+    border-color: rgb(102, 26, 26);
+}
+
+.lauraleg {
+    position: relative;
+    top: -0.4em;
+    border-color: rgb(236, 99, 131);
+}
+
+.kevinleg {
+    border-color: rgb(102, 26, 26);
+}
+
+.arms {
+    position: relative;
+    left: -2.2em;
+    width: 143%;
+    justify-content: space-between;
+}
+
+.arm {
+    height: 3em;
+    width: 1em;
+    border: 3.5px solid;
+    border-radius: 0px 0px 30px 30px;
+    border-top: 0px;
+}
+
+.lauraarm {
+    border-color: rgb(236, 99, 131);
+}
+
+.lauraarm.leftarm {
+    z-index: 0;
+    transform: rotate(30deg);
+}
+
+.kevinarm.leftarm {
+    transform: rotate(30deg);
+}
+
+.lauraarm.rightarm {
+    transform: rotate(-30deg);
+}
+
+.kevinarm.rightarm {
+    transform: rotate(-30deg);
+}
+
+.kevinarm {
+    border-color: rgb(102, 26, 26);
+}
+
+
 .kevin {
     height: 10em;
     width: 10.5em;
     border: 3.5px solid rgb(102, 26, 26);
+    /* background-color: rgb(102, 26, 26); */
 }
-
-
 
 .laura {
     height: 9.5em;
-    width: 10em;
+    width: 10.5em;
     border: 3.5px solid rgb(236, 99, 131);
+    /* background-color:rgb(247, 180, 195); */
+}
+
+.fill {
+    z-index: -1;
+    position: relative;
+    top: -9.4em;
+    left: 0.8em;
+    height: 9.5em;
+    width: 10.5em;
+}
+
+.lauracolor {
+    background-color: rgb(247, 180, 195)
+}
+
+.kevincolor {
+    background-color: rgb(191, 163, 163)
 }
