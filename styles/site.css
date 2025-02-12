@@ -30,6 +30,10 @@
     margin-top: 9em;
 }
 
+.intro h1 {
+    margin-top: 0.25em;
+}
+
 .hithere {
     justify-content: center;
     align-content: start;
@@ -412,11 +416,40 @@
     background-color: rgb(191, 163, 163)
 }
 
-
 .button {
+    z-index: 1;
     position: relative;
     top: -1em;
-    border: 3px solid black;
+    border: 3px solid rgb(120, 83, 83);
+    background-color: transparent;
     border-radius: 20%;
     padding: 1em;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+  }
+
+  /* visited link */
+  a:visited {
+    color: black;
+    text-decoration: none;
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: rgb(245, 92, 125);
+    border-color: rgb(245, 92, 125)
+  }
+
+.buttonfill {
+    z-index: 0;
+    position: relative;
+    left: 46.7%;
+    top: -2.7em;
+    width: 6.6em;
+    height: 3.5em;
+    background-color: rgb(231, 209, 209);
+    border-radius: 20%;
 }
