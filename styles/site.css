@@ -27,12 +27,12 @@
 }
 
 .intro {
-    margin-top: 4em;
+    margin-top: 8em;
 }
 
 .illustration {
     margin: 14em;
-    margin-top: 9em;
+    margin-top: 6em;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -243,6 +243,7 @@
 
 .kevinarm.rightarm {
     transform: rotate(-30deg);
+    animation: lauraarm 4s infinite;
 }
 
 @keyframes kevinarm {
