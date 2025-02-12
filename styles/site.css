@@ -471,7 +471,7 @@ a:link {
 }
 
 .poloroids {
-    margin-top: 6.25em;
+    margin-top: 7em;
     margin-left: 30em;
     margin-right: 30em;
 }
@@ -494,15 +494,36 @@ a:link {
     object-fit: contain;
 }
 
+@keyframes poloroidleft {
+    0%   {transform: translate(0, 4px) rotate(-15deg);}
+    70%  {transform: translate(0,-30px) rotate(-20deg) ;}
+    80%  {transform: translate(0px,3px)rotate(-15deg);}
+    85%  {transform: translate(0px,-6px)rotate(-15deg);}
+    90%  {transform: translate(0px,4px)rotate(-15deg);}
+    95%  {transform: translate(0px,-2px) rotate(-15deg) ;}
+    100% {transform: translate(0, 4px) rotate(-15deg);}
+}
+
 .poloroid.leftside {
     position: relative;
-    margin-top: 2em;
+    margin-top: 0em;
     transform: rotate(-15deg);
+    animation: poloroidleft 4s infinite;
+}
 
+@keyframes poloroidright {
+    0%   {transform: translate(0, 4px)rotate(15deg);}
+    70%  {transform: translate(0,-80px) rotate(20deg) ;}
+    80%  {transform: translate(0px,3px)rotate(15deg);}
+    85%  {transform: translate(0px,-6px)rotate(15deg);}
+    90%  {transform: translate(0px,4px) rotate(15deg);}
+    95%  {transform: translate(0px,-2px)  rotate(15deg);}
+    100% {transform: translate(0, 4px) rotate(15deg);}
 }
 
 .poloroid.rightside {
     position: relative;
     top: -1em;
     transform: rotate(15deg);
+    animation: poloroidright 4s infinite;
 }
