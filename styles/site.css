@@ -27,12 +27,118 @@
 }
 
 .intro {
-    margin-top: 8em;
+    margin-top: 9em;
+}
+
+.hithere {
+    justify-content: center;
+    align-content: start;
+    height: 1.6em;
+}
+
+.sweetkevin {
+    font-size: 1.3em;
+    margin: 0.25em;
+    margin-bottom: 0.5em;
+}
+
+.hearts {
+    font-size: 1.5em;
+    color: rgb(245, 92, 125);
+}
+
+.one {
+    animation: hearts1 2.5s infinite;
+}
+
+.two {
+    animation: hearts2 2.5s infinite;
+    animation-delay: 250ms;
+}
+
+.three {
+    animation: hearts3 2.5s infinite;
+    animation-delay: 500ms;
+}
+
+.four {
+    animation: hearts4 2.5s infinite;
+    animation-delay: 500ms;
+}
+
+.five {
+    animation: hearts5 2.5s infinite;
+    animation-delay: 250ms;
+}
+
+.six {
+    animation: hearts6 2.5s infinite;
+}
+
+@keyframes hearts1 {
+    0%   {transform: translate(0,0) rotate(0);}
+    50% {transform: translate(-17px,-25px) rotate(-40deg);}
+    75% {font-size: 0em;}
+    90% {color: transparent;}
+    91% {transform: translate(0,0)}
+    92% {font-size: 1.5em; color:rgb(236, 99, 131);}
+    100% {font-size: 1.5em;}
+}
+
+@keyframes hearts2 {
+    0%   {transform: translate(0,0) rotate(0);}
+    50% {transform: translate(-14px,-25px) rotate(-35deg);}
+    75% {font-size: 0em;}
+    90% {color: transparent;}
+    91% {transform: translate(0,0)}
+    92% {font-size: 1.5em; color:rgb(236, 99, 131);}
+    100% {font-size: 1.5em;}
+}
+
+@keyframes hearts3 {
+    0%   {transform: translate(0,0) rotate(0);}
+    50% {transform: translate(-11px,-25px) rotate(-30deg);}
+    75% {font-size: 0em;}
+    90% {color: transparent;}
+    91% {transform: translate(0,0)}
+    92% {font-size: 1.5em; color:rgb(236, 99, 131);}
+    100% {font-size: 1.5em;}
+}
+
+@keyframes hearts4 {
+    0%   {transform: translate(0,0) rotate(0);}
+    50% {transform: translate(11px,-25px) rotate(30deg);}
+    75% {font-size: 0em;}
+    90% {color: transparent;}
+    91% {transform: translate(0,0)}
+    92% {font-size: 1.5em; color:rgb(236, 99, 131);}
+    100% {font-size: 1.5em;}
+}
+
+@keyframes hearts5 {
+    0%   {transform: translate(0,0) rotate(0);}
+    50% {transform: translate(14px,-25px) rotate(35deg);}
+    75% {font-size: 0em;}
+    90% {color: transparent;}
+    91% {transform: translate(0,0)}
+    92% {font-size: 1.5em; color:rgb(236, 99, 131);}
+    100% {font-size: 1.5em;}
+}
+
+@keyframes hearts6 {
+    0%   {transform: translate(0,0) rotate(0);}
+    50% {transform: translate(17px,-25px) rotate(40deg);}
+    75% {font-size: 0em;}
+    90% {color: transparent;}
+    91% {transform: translate(0,0)}
+    92% {font-size: 1.5em; color:rgb(236, 99, 131);}
+    100% {font-size: 1.5em;}
 }
 
 .illustration {
     margin: 14em;
-    margin-top: 6em;
+    margin-top: 5em;
+    margin-bottom: -1em;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -274,6 +380,10 @@
 @keyframes laurabody {
     0%   {transform: translate(0, 4px) rotate(0deg) ;}
     70%  {transform: translate(-15px,-40px) rotate(10deg) ;}
+    80%  {transform: translate(0px,4px);}
+    85%  {transform: translate(0px,-6px);}
+    90%  {transform: translate(0px,4px);}
+    95%  {transform: translate(0px,-2px)  ;}
     100% {transform: translate(0, 4px) rotate(0deg);}
 }
 
@@ -300,4 +410,13 @@
 
 .kevincolor {
     background-color: rgb(191, 163, 163)
+}
+
+
+.button {
+    position: relative;
+    top: -1em;
+    border: 3px solid black;
+    border-radius: 20%;
+    padding: 1em;
 }
