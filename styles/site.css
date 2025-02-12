@@ -54,6 +54,18 @@
     border-radius: 50%
 }
 
+@keyframes kevinglasses {
+    0%   {transform: translate(0, 0) rotate(0);}
+    65%  {transform: translate(0, 0) rotate(0);}
+    70%  {transform: translate(0,-7px) rotate(-3deg);}
+    75%  {transform: translate(0, 2px) rotate(1deg);}
+    80%  {transform: translate(0,-5px) rotate(-2deg);}
+    85%  {transform: translate(0, 2px) rotate(1deg);}
+    90%  {transform: translate(0, -3px) rotate(-1deg);}
+    95%  {transform: translate(0, 1px) rotate(0);}
+    100% {transform: translate(0, 0) rotate(0);}
+}
+
 .kevinglasses {
     display: flex;
     flex-direction: row;
@@ -62,6 +74,7 @@
     margin-right: 0.6em;
     font-size: 1em;
     border-radius: 50%;
+    animation: kevinglasses 4s infinite;
 }
 
 .left-glasses {
@@ -122,6 +135,7 @@
     border-radius: 20px 20px 100px 100px;
     margin-right: 3em;
     margin-left: 2em;
+    animation: kevinglasses 4s infinite;
 }
 
 .legs {
@@ -152,18 +166,37 @@
 
 .laurafoot {
     left: -1.2em;
-    border-color: rgb(236, 99, 131)
+    border-color: rgb(236, 99, 131);
+    background-color: rgb(236, 99, 131)
 }
 
 .kevinfoot {
     left: -0.2em;
     border-color: rgb(102, 26, 26);
+    background-color: rgb(102, 26, 26);
+}
+
+@keyframes lauraleg {
+    0%   {transform: translate(0, 4px) rotate(0) ;}
+    70%  {transform: translate(-17px,0px) rotate(40deg) ;}
+    100% {transform: translate(0, 4px) rotate(0);}
 }
 
 .lauraleg {
     position: relative;
     top: -0.4em;
     border-color: rgb(236, 99, 131);
+    animation: lauraleg 3s infinite;
+}
+
+@keyframes kevinleg {
+    0%   {transform: translate(0,0) rotate(0);}
+    50%  {transform: translate(17px,0px) rotate(-40deg);}
+    100% {transform: translate(0,0) rotate(0);;}
+}
+
+.left.kevinleg {
+    animation: kevinleg 4s infinite;
 }
 
 .kevinleg {
@@ -192,6 +225,8 @@
 .lauraarm.leftarm {
     z-index: 0;
     transform: rotate(30deg);
+    animation: kevinarm 6s infinite;
+    animation-delay: 250ms;
 }
 
 .kevinarm.leftarm {
@@ -201,6 +236,8 @@
 
 .lauraarm.rightarm {
     transform: rotate(-30deg);
+    animation: lauraarm 6s infinite;
+    animation-delay: 250ms;
 }
 
 .kevinarm.rightarm {
@@ -213,6 +250,12 @@
     100% {transform: translate(0, 4px) rotate(30deg);}
 }
 
+@keyframes lauraarm {
+    0%   {transform: translate(0, 4px) rotate(-30deg) ;}
+    50%  {transform: translate(7px,-35px) rotate(-120deg) ;}
+    100% {transform: translate(0, 4px) rotate(-30deg);}
+}
+
 .kevinarm {
     border-color: rgb(102, 26, 26);
 }
@@ -222,14 +265,21 @@
     height: 10em;
     width: 10.5em;
     border: 3.5px solid rgb(102, 26, 26);
+
     /* background-color: rgb(102, 26, 26); */
+}
+
+@keyframes laurabody {
+    0%   {transform: translate(0, 4px) rotate(0deg) ;}
+    70%  {transform: translate(-15px,-40px) rotate(10deg) ;}
+    100% {transform: translate(0, 4px) rotate(0deg);}
 }
 
 .laura {
     height: 9.5em;
     width: 10.5em;
     border: 3.5px solid rgb(236, 99, 131);
-    /* background-color:rgb(247, 180, 195); */
+    animation: laurabody 3s infinite;
 }
 
 .fillbody {
@@ -242,7 +292,8 @@
 }
 
 .lauracolor {
-    background-color: rgb(247, 180, 195)
+    background-color: rgb(247, 180, 195);
+    animation: laurabody 3s infinite;
 }
 
 .kevincolor {
