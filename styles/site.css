@@ -461,6 +461,10 @@ a:link {
     border-radius: 20%;
 }
 
+.thisisus {
+    height: 100vh;
+}
+
 .picturesection {
     justify-content: space-around;
     margin-top: 6em;
@@ -526,4 +530,74 @@ a:link {
     top: -1em;
     transform: rotate(15deg);
     animation: poloroidright 4s infinite;
+}
+
+.dinoskate {
+    display: flex;
+    flex-direction: column;
+    height: 2vh;
+    width: 2em;
+    margin-left: 18em;
+    animation: dinoskate 3s infinite;
+    animation-timing-function: ease-in;
+}
+
+.dinoskate img {
+    height: 10vh;
+    width: fit-content;
+}
+
+.dino {
+    transform: scaleX(-1);
+    margin-top: 1.5em;
+}
+
+.skate {
+    position: relative;
+    top: -6vh;
+}
+
+@keyframes dinoskate {
+    0% {transform: translate(0,0);}
+    100% {transform: translate(60em, 0);}
+}
+
+
+.divide {
+    position: relative;
+    /* top: -2em; */
+    margin: auto;
+    margin-top: 6.75em;
+    width: 60em;
+    border-bottom: 2px solid rgb(120, 83, 83);
+    box-shadow: 5px 4px 5px rgb(120, 83, 83)
+}
+
+.pictureintro {
+    width: 50%;
+}
+
+.carbut {
+    border: none;
+}
+
+.carouselpics {
+    margin: 20em;
+    margin-top: 0;
+    max-height: 80vh;
+}
+
+.carousel {
+    padding: 2em;
+    border-radius: 4%;
+    width: fit-content;
+    height: fit-content;
+    gap: 1em;
+    background-color: rgb(191, 163, 163);
+}
+
+
+.carousel img {
+    width: 30vw;
+    border-radius: 2%;
 }
