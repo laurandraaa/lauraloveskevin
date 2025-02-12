@@ -196,6 +196,7 @@
 
 .kevinarm.leftarm {
     transform: rotate(30deg);
+    animation: kevinarm 4s infinite;
 }
 
 .lauraarm.rightarm {
@@ -204,6 +205,12 @@
 
 .kevinarm.rightarm {
     transform: rotate(-30deg);
+}
+
+@keyframes kevinarm {
+    0%   {transform: translate(0, 4px) rotate(30deg) ;}
+    50%  {transform: translate(-7px,-35px) rotate(130deg) ;}
+    100% {transform: translate(0, 4px) rotate(30deg);}
 }
 
 .kevinarm {
@@ -225,13 +232,13 @@
     /* background-color:rgb(247, 180, 195); */
 }
 
-.fill {
+.fillbody {
     z-index: -1;
     position: relative;
     top: -9.4em;
     left: 0.8em;
     height: 9.5em;
-    width: 10.5em;
+    width: 11em;
 }
 
 .lauracolor {
