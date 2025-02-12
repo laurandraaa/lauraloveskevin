@@ -5,6 +5,13 @@
     background-color: transparent;
 }
 
+.gamja-flower-regular {
+    font-family: "Gamja Flower", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
 .body {
     background-color:rgb(243, 210, 216);
 }
@@ -452,4 +459,50 @@ a:link {
     height: 3.5em;
     background-color: rgb(231, 209, 209);
     border-radius: 20%;
+}
+
+.picturesection {
+    justify-content: space-around;
+    margin-top: 6em;
+}
+
+.border {
+    border: 3.5px solid rgb(102, 26, 26)
+}
+
+.poloroids {
+    margin-top: 6.25em;
+    margin-left: 30em;
+    margin-right: 30em;
+}
+
+.poloroid {
+    font-family: "Gamja Flower";
+    font-size: 1.75em;
+    border: 3px solid rgb(236, 99, 131);
+    background-color: rgb(243, 210, 216);
+    border-radius: 4%;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5em;
+}
+
+.poloroid img {
+    max-width: 100%;
+    border: 3px solid rgb(236, 99, 131);
+    border-radius: 2%;
+    object-fit: contain;
+}
+
+.poloroid.leftside {
+    position: relative;
+    margin-top: 2em;
+    transform: rotate(-15deg);
+
+}
+
+.poloroid.rightside {
+    position: relative;
+    top: -1em;
+    transform: rotate(15deg);
 }
