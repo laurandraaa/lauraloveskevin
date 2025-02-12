@@ -31,7 +31,8 @@
 }
 
 .illustration {
-    margin: 8em;
+    margin: 14em;
+    margin-top: 9em;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
