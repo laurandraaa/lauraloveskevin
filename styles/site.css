@@ -28,6 +28,10 @@
     height: 100vh;
 }
 
+.pagesection p {
+    margin-top: 1em;
+}
+
 .smallcontent {
     width: 50vw;
     margin: auto;
@@ -624,6 +628,37 @@ a:link {
     animation: poloroidright 4s infinite;
 }
 
+.family-portrait {
+    margin-top: 8%;
+    align-items: end;
+    width: 100%;
+
+}
+
+img.deeno {
+    height: 12em;
+    margin-bottom: -1.7em;
+    transform: scaleX(-1);
+}
+
+img.dano {
+    margin-left: 1em;
+    height: 5em;
+    transform: scaleX(-1);
+}
+
+img.bartholomew {
+    height: 10em;
+}
+
+img.tedtwo {
+    height: 15em;
+}
+
+img.stubby {
+    height: 6em;
+}
+
 .dinoskate-container {
     margin-bottom: 4em;
 }
@@ -674,7 +709,6 @@ img.teddy {
 }
 
 .bears {
-    /* width: 80%; */
     margin-left: 1em;
     margin-right: 1em;
     display: flex;
