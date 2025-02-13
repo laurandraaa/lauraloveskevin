@@ -667,11 +667,41 @@ img.teddy {
 }
 
 .board {
-    width: 70%;
-    height: 3em;
-    background-color:rgb(102, 26, 26);
+    width: 85%;
+    height: 1.5em;
+    background-color:rgb(118, 82, 55);
+    border-radius: 10px 10px 25px 25px;
 }
 
+.bears {
+    /* width: 80%; */
+    margin-left: 1em;
+    margin-right: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+@keyframes seesaw {
+    0%   {transform:rotate(-10deg) ;}
+    50%   {transform: rotate(10deg) ;}
+    100%   {transform: rotate(-10deg) ;}
+}
+
+
+.seesaw {
+    animation: seesaw 3s infinite;
+}
+
+
+.seesaw-center {
+    position: relative;
+    top: -1em;
+    width: 4%;
+    height: 6em;
+    background-color:rgb(118, 82, 55);
+    border-radius: 0px 0px 10px 10px;
+}
 
 @keyframes dinoskate {
     0% {transform: translate(-10%,0);}
@@ -679,7 +709,6 @@ img.teddy {
     30% {transform: translate(2%,0);}
     100% {transform: translate(130%, 0);}
 }
-
 
 .divide {
     position: relative;
