@@ -31,6 +31,7 @@
 .smallcontent {
     width: 50vw;
     margin: auto;
+    overflow-x: hidden;
 }
 
 .center-block {
@@ -53,10 +54,6 @@
 
 .right {
     float: right;
-}
-
-.intro {
-    margin-top: 9em;
 }
 
 .intro h1 {
@@ -627,29 +624,54 @@ a:link {
     animation: poloroidright 4s infinite;
 }
 
+.dinoskate-container {
+    margin-bottom: 4em;
+}
+
 .dinoskate {
     display: flex;
     flex-direction: column;
-    height: 2vh;
-    /* width: 2em; */
+    height: 20vh;
     animation: dinoskate 3s infinite;
     animation-timing-function: ease-in;
 }
 
 .dinoskate img {
-    height: 10vh;
+    height: 15vh;
     width: fit-content;
 }
 
+
 .dino {
     transform: scaleX(-1);
-    margin-top: 1.5em;
+    margin-top: 2em;
 }
 
 .skate {
     position: relative;
-    top: -6vh;
+    top: -8.5vh;
 }
+
+.skate-ground {
+    width: 100%;
+    border-bottom: 2px solid rgb(102, 26, 26);
+    box-shadow: 1px 8px 15px rgb(178, 107, 107);
+}
+
+img.ted {
+    height: 15vh;
+}
+
+img.teddy {
+    height: 30vh;
+}
+
+.board {
+    width: 70%;
+    height: 3em;
+    background-color:rgb(102, 26, 26);
+}
+
 
 @keyframes dinoskate {
     0% {transform: translate(-10%,0);}
@@ -661,7 +683,6 @@ a:link {
 
 .divide {
     position: relative;
-    /* top: -2em; */
     margin: auto;
     margin-top: 6.75em;
     width: 100%;
