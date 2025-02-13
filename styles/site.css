@@ -25,7 +25,7 @@
 }
 
 .pagesection {
-    height: 100vh;
+    height: 90vh;
 }
 
 .playground .pagesection p {
@@ -58,6 +58,10 @@
 
 .right {
     float: right;
+}
+
+.index {
+    margin-top: 3em;
 }
 
 .intro h1 {
@@ -758,6 +762,7 @@ img.teddy {
 
 
 .seesaw {
+    margin-top: 1em;
     animation: seesaw 3s infinite;
 }
 
