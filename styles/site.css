@@ -32,6 +32,10 @@
     margin-top: 1em;
 }
 
+.thisisus .blurb {
+    margin-top: 1em;
+}
+
 .smallcontent {
     width: 55vw;
     margin: auto;
@@ -50,6 +54,10 @@
 .row {
     display: flex;
     flex-direction: row;
+}
+
+.grid {
+    display: grid;
 }
 
 .left {
@@ -575,6 +583,72 @@ a:link {
     border: 3.5px solid rgb(102, 26, 26)
 }
 
+.stringlights {
+    height: fit-content;
+    margin-top: 5em;
+}
+
+@keyframes stars {
+    0% {transform: translate(0, 0);}
+    10% {transform: translate(0, -8px);}
+    15% {transform: translate(0, 4px);}
+    20% {transform: translate(0, 0);}
+    100% {transform: translate(0, 0);}
+}
+
+@keyframes starry {
+    0% {transform: rotate(0);}
+    10% {transform: rotate(0deg);}
+    15% {transform: rotate(-10deg);}
+    20% {transform: rotate(10deg);}
+    22% {transform: rotate(-7deg);}
+    24% {transform: rotate(7deg);}
+    26% {transform: rotate(-7deg);}
+    28% {transform: rotate(7deg);}
+    30% {transform: rotate(-5deg);}
+    31% {transform: rotate(5deg);}
+    32% {transform: rotate(-5deg);}
+    33% {transform: rotate(5deg);}
+    34% {transform: rotate(-5deg);}
+    35% {transform: rotate(0deg);}
+    100% {transform: translate(0, 0);}
+}
+
+.stringlights .stars {
+    animation: starry 3s infinite;
+}
+
+.light1 {
+    animation: stars 2s infinite;
+    animation-delay: 150ms;
+}
+
+.light2 {
+    animation: stars 2s infinite;
+    animation-delay: 300ms;
+}
+
+.light3 {
+    animation: stars 2s infinite;
+    animation-delay: 450ms;
+}
+
+.light4 {
+    animation: stars 2s infinite;
+    animation-delay: 600ms;
+}
+
+.light5 {
+    animation: stars 2s infinite;
+    animation-delay: 750ms;
+}
+
+.stars {
+    margin-left: 2em;
+    margin-right: 2em;
+    /* animation: stars 3s infinite; */
+}
+
 .poloroids {
     margin-top: 7em;
     margin-left: 15em;
@@ -589,14 +663,19 @@ a:link {
     border-radius: 4%;
     width: fit-content;
     height: fit-content;
-    padding: 0.5em;
+    padding: 0.4em;
 }
 
 .poloroid img {
-    max-width: 100%;
+    width: 97%;
     border: 3px solid rgb(236, 99, 131);
     border-radius: 2%;
-    object-fit: contain;
+}
+
+.poloroidcollage {
+    margin-top: -5em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px 10px;
 }
 
 @keyframes poloroidleft {
@@ -631,6 +710,10 @@ a:link {
     top: -1em;
     transform: rotate(15deg);
     animation: poloroidright 4s infinite;
+}
+
+.poloroidcollage {
+    margin-bottom: 20vh;
 }
 
 .family-portrait {
@@ -857,31 +940,6 @@ img.grass {
 
 .pictureintro {
     width: 50%;
-}
-
-.carbut {
-    border: none;
-}
-
-.carouselpics {
-    margin: 20em;
-    margin-top: 0;
-    max-height: 80vh;
-}
-
-.carousel {
-    padding: 2em;
-    border-radius: 4%;
-    width: fit-content;
-    height: fit-content;
-    gap: 1em;
-    background-color: rgb(191, 163, 163);
-}
-
-
-.carousel img {
-    width: 30vw;
-    border-radius: 2%;
 }
 
 .navbutton-container {
