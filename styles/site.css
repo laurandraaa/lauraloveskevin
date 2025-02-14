@@ -21,6 +21,10 @@
     display: none;
 }
 
+.small-text {
+    font-size: xx-small;
+}
+
 .body {
     background-color:rgb(243, 210, 216);
 }
