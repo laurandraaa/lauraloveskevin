@@ -734,13 +734,6 @@ a:link {
     100% {transform: translate(0, 4px) rotate(15deg);}
 }
 
-
-.poloroidcollage .poloroid:hover {
-    transform: translate(0, -9px);
-    box-shadow: 1px 1px 5px rgb(117, 67, 75);
-    background-color: rgb(246, 193, 193)
-}
-
 .poloroid.rightside {
     position: relative;
     top: -1em;
