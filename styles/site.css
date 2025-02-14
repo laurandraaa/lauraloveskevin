@@ -783,8 +783,9 @@ img.stubby {
     height: 6em;
 }
 
-.deenoskate {
+.deenoskate-container {
     margin-top: 2em;
+    position: relative;
 }
 
 .dinoskate-container {
@@ -795,6 +796,7 @@ img.stubby {
     display: flex;
     flex-direction: column;
     height: 20vh;
+    position: relative;
     animation: dinoskate 3s infinite;
     animation-timing-function: ease-in;
 }
@@ -804,12 +806,38 @@ img.stubby {
     width: fit-content;
 }
 
+.dino {
+    position: absolute;
+    bottom: 0;
+    transform: scaleX(-1);
+}
+
+.skate {
+    position: absolute;
+    bottom: -5vh;
+}
+
+.danoskate-container {
+    position: relative;
+}
+
 .danoskate {
     display: flex;
     flex-direction: column;
     height: 20vh;
+    position: relative;
     animation: danoskate 3s infinite;
     animation-timing-function: ease-in;
+}
+
+.danoskate .rollerblades {
+    position: absolute;
+    right: 4vw;
+    bottom: 0;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    width: 12vh;
 }
 
 .danoskate img {
@@ -817,35 +845,21 @@ img.stubby {
     width: fit-content;
 }
 
-.rollerblades img {
-    height: 4.3vh;
+.rollerblades img.rollerskate {
+    height: 4vh;
     width: fit-content;
-}
-
-.dino {
-    transform: scaleX(-1);
-    margin-top: 2em;
 }
 
 .danoskating {
     transform: scaleX(-1);
-    margin-top: 3.8em;
-    position: relative;
-    right: -41vw;
-}
-
-.rollerskate {
-    position: relative;
-    top: -3.5vh;
-    left: 17.5vw;
-}
-
-.skate {
-    position: relative;
-    top: -9vh;
+    position: absolute;
+    right: 4vw;
+    bottom: 1.5vh;
 }
 
 .skate-ground {
+    position: absolute;
+    bottom: 0;
     width: 100%;
     border-bottom: 2px solid rgb(102, 26, 26);
     box-shadow: 1px 8px 15px rgb(178, 107, 107);
@@ -1126,5 +1140,34 @@ img.heart {
     .illustration {
         margin-left: 3em;
         margin-right: 3em;
+    }
+
+    .dinoskate img {
+        height: 7.5vh;
+        width: fit-content;
+    }
+
+    .skate {
+        position: absolute;
+        bottom: -2.5vh;
+    }
+
+    .danoskate img {
+        height: 6vh;
+        width: fit-content;
+    }
+
+    .rollerblades img.rollerskate {
+        height: 2vh;
+        width: fit-content;
+    }
+
+    .danoskate .rollerblades {
+        width: 6vh;
+        justify-content: start;
+    }
+
+    .danoskating {
+        bottom: 1vh;
     }
 }
