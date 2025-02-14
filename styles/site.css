@@ -965,7 +965,6 @@ img.stubbysun {
 
 .stubbycontainer:hover {
     animation: stubby 6s infinite;
-    background-color: rgb(255, 255, 210);
 }
 
 .grasses {
