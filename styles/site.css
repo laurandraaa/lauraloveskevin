@@ -685,7 +685,7 @@ a:link {
 
 .poloroid {
     font-family: "Gamja Flower";
-    font-size: 1.5em;
+    font-size: 1.3em;
     border: 3px solid rgb(236, 99, 131);
     background-color: rgb(243, 210, 216);
     border-radius: 4%;
@@ -1104,4 +1104,23 @@ img.heart {
 .rightalign {
     text-align: right;
     margin-bottom: 0.5em;
+}
+
+@media (max-width: 1000px) {
+    .smallcontent {
+        width: 70vw;
+    }
+
+    .navbuttons {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+    }
+
+    .navbutton-container {
+        margin-top: 1em;
+        margin-left: 0;
+        /* justify-content: left; */
+    }
 }
