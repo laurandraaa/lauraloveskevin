@@ -756,7 +756,6 @@ a:link {
     margin-top: 8%;
     align-items: end;
     width: 100%;
-
 }
 
 img.deeno {
@@ -941,7 +940,8 @@ img.teddy {
     width: 3em;
     display: flex;
     justify-content: center;
-    align-items: center;;
+    align-items: center;
+    position: relative;
 }
 
 img.stubbysun {
@@ -969,9 +969,8 @@ img.stubbysun {
 }
 
 .grasses {
-    position: relative;
-    top: -10.1em;
-    width: 100%;
+    position: absolute;
+    bottom: -17vh;
     align-items: center;
 }
 
@@ -1142,6 +1141,30 @@ img.heart {
         margin-right: 3em;
     }
 
+    img.deeno {
+        height: 10.5em;
+        margin-bottom: -1.7em;
+        transform: scaleX(-1);
+    }
+
+    img.dano {
+        margin-left: 0.75em;
+        height: 5em;
+        transform: scaleX(-1);
+    }
+
+    img.bartholomew {
+        height: 8.5em;
+    }
+
+    img.tedtwo {
+        height: 13em;
+    }
+
+    img.stubby {
+        height: 5em;
+    }
+
     .dinoskate img {
         height: 7.5vh;
         width: fit-content;
@@ -1170,4 +1193,29 @@ img.heart {
     .danoskating {
         bottom: 1vh;
     }
+
+    .bears {
+        justify-content: space-around;
+    }
+
+    img.ted {
+        height: 7.5vh;
+    }
+
+    img.teddy {
+        height: 15vh;
+    }
+
+    img.stubbysun {
+        height: 17.5vh;
+    }
+
+    img.grass {
+        width: 4em;
+    }
+
+    .grasses {
+        bottom: -8.25vh;
+    }
+
 }
