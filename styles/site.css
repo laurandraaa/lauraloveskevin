@@ -612,8 +612,10 @@ a:link {
 }
 
 .stringlights {
+    width: 100%;
     height: fit-content;
     margin-top: 5em;
+    margin-bottom: 1em;
 }
 
 @keyframes stars {
@@ -674,7 +676,6 @@ a:link {
 .stars {
     margin-left: 2em;
     margin-right: 2em;
-    /* animation: stars 3s infinite; */
 }
 
 .poloroids {
@@ -701,7 +702,7 @@ a:link {
 }
 
 .poloroidcollage {
-    margin-top: -5em;
+    margin-top: 5em;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px 10px;
 }
@@ -1236,6 +1237,27 @@ img.heart {
 
     .grasses {
         bottom: -8.25vh;
+    }
+
+    .thisisus {
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .poloroids {
+        margin-top: 7em;
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+
+    .poloroidcollage {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .poloroidcollage .poloroid {
+        font-size: 1.1em;
     }
 
 }
