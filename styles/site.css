@@ -1124,6 +1124,11 @@ img.heart {
         width: 70vw;
     }
 
+    .buttonfill {
+        left: 45.5%;
+    }
+
+
     .navbuttons {
         margin-top: 2em;
         display: flex;
