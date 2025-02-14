@@ -1121,6 +1121,10 @@ img.heart {
     .navbutton-container {
         margin-top: 1em;
         margin-left: 0;
-        /* justify-content: left; */
+    }
+
+    .illustration {
+        margin-left: 3em;
+        margin-right: 3em;
     }
 }
