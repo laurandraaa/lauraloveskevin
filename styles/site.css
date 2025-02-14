@@ -595,6 +595,10 @@ a:link {
     border-radius: 20%;
 }
 
+.pictures {
+    position: relative;
+}
+
 .thisisus {
     height: 100vh;
     width: 60vw;
@@ -614,8 +618,6 @@ a:link {
 .stringlights {
     width: 100%;
     height: fit-content;
-    margin-top: 5em;
-    margin-bottom: 1em;
 }
 
 @keyframes stars {
@@ -1237,6 +1239,10 @@ img.heart {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .picturesection {
+        margin-top: 0;
     }
 
     .poloroids {
