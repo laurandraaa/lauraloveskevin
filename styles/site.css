@@ -1167,7 +1167,7 @@ img.heart {
 
     .dinoskate img {
         height: 7.5vh;
-        width: fit-content;
+        /* width: fit-content; */
     }
 
     .skate {
@@ -1177,7 +1177,7 @@ img.heart {
 
     .danoskate img {
         height: 6vh;
-        width: fit-content;
+        /* width: fit-content; */
     }
 
     .rollerblades img.rollerskate {
