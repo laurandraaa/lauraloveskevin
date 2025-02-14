@@ -1015,6 +1015,10 @@ img.grass {
     grid-template-columns: 1fr 1fr;
 }
 
+.letter-container h1 {
+    animation: starry 3s infinite;
+}
+
 .letter-container .blurb {
     margin-top: 1em;
 }
