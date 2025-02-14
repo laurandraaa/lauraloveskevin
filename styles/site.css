@@ -1067,6 +1067,11 @@ img.heart {
     top: 5em;
 }
 
+@keyframes papergrow {
+    from {transform: scale(0.1) translate(-500px, 0);}
+    to {transform: scale(1) translate(0,0);}
+}
+
 .paper {
     font-family: "Reenie Beanie";
     padding: 1em;
@@ -1080,6 +1085,7 @@ img.heart {
     top: 5em;
     font-size: x-large;
     box-shadow: 5px 5px 5px rgb(247, 211, 184);
+    animation: papergrow 1s;
 }
 
 .leftalign {
