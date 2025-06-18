@@ -524,6 +524,7 @@
 .explore h1 {
     animation: bounce 5s infinite;
     animation-delay: -2s;
+    width: 100%;
 }
 
 .laura {
@@ -1037,6 +1038,15 @@ img.grass {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.explore .back-arrow {
+    font-size: xx-large;
+    color:rgb(82, 122, 59)
+}
+
+.explore .toppy a:hover {
+    color: rgb(197, 236, 185);
 }
 
 .letter-container h1 {
