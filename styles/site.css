@@ -118,7 +118,7 @@
 
 .hearts {
     font-size: 1.5em;
-    color: rgb(245, 92, 125);
+    color: rgb(245, 133, 92);
 }
 
 .one {
@@ -1143,6 +1143,39 @@ img.heart {
 .rightalign {
     text-align: right;
     margin-bottom: 0.5em;
+}
+
+@keyframes bucketlist {
+    0%   {transform: translate(0,0) rotate(0);}
+    50% {transform: translate(0px,-30px) rotate(1deg);}
+    51% {transform: translate(0px,-30px) rotate(-4deg);}
+    53% {transform: translate(0px,-30px) rotate(4deg);}
+    55% {transform: translate(0px,-30px) rotate(-4deg);}
+    57% {transform: translate(0px,-30px) rotate(4deg);}
+    59% {transform: translate(0px,-30px) rotate(-4deg);}
+    61% {transform: translate(0px,-30px) rotate(4deg);}
+    63% {transform: translate(0px,-30px) rotate(-4deg);}
+    65% {transform: translate(0px,-30px) rotate(4deg);}
+    70% {transform: translate(0px,-30px) rotate(0);}
+    80%   {transform: translate(0,0) rotate(0);}
+}
+
+.bucketlist h1 {
+    animation: bucketlist 3s infinite;
+}
+
+.bucketlist .teensietiny {
+    font-size: small;
+}
+
+.bucketlist .list {
+    font-size: 3ex;
+    margin-top: 1em;
+    margin-left: 30%;
+}
+
+.bucketlist .list .checked {
+    color: green;
 }
 
 @media (max-width: 1000px) {
