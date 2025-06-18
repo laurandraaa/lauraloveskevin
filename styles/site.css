@@ -1154,9 +1154,9 @@ img.heart {
 
 .book-background img {
     height: 100vh;
-    width: fit-content;
+    width: 70vw;
+    max-width: 150vh;
 }
-
 
 @keyframes bucketlist {
     0%   {transform: translate(0,0) rotate(0);}
@@ -1188,17 +1188,16 @@ img.heart {
 }
 
 .bucketlist .book-left {
-    max-width: 43vh;
+    width: 25vw;
 }
 
 .bucketlist .book-right {
-    max-width: 43vh;
+    width: 24vw;
     height: 100vh;
-    grid-column: 1 /2;
 }
 
 .bucketlist .content-right {
-    padding-left: 4vw;
+    padding-left: 5vw;
     /* padding-right: 20vw; */
 }
 
@@ -1207,9 +1206,9 @@ img.heart {
 }
 
 .bucketlist .list {
-    font-size: 3ex;
+    font-size: 2.5ex;
     margin-top: 1em;
-
+     /* background-color: rgb(249, 244, 191); */
 }
 
 .bucketlist .list .checked {
