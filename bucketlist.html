@@ -6,19 +6,47 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Nothing+You+Could+Do&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+        <script src="scripts/jquery-3.7.1.min.js"></script>
+        <script src="scripts/bucketlist.js"></script>
     </head>
 
     <body>
-        <div class="bucketlist pagesection center-flex smallcontent">
-            <h1>our little bucketlist</h1>
-            <p class="teensietiny">if u want to add anything, go text ur sweet laura please!!</p>
-            <div class="list">
-                <p class="leftalign">☐ the bern</p>
-                <p class="leftalign">☐ make matching rings from the bars!!</p>
-                <p class="leftalign">☐ kevin no back pain hehe</p>
-                <p class="leftalign checked">☑ first international trip together</p>
-                <p class="leftalign">☐ kevin gets return offer from amazon wahoooo</p>
-                <p class="leftalign">☐ full time jobs in the same city</p>
+        <div class="bucketlist">
+            <div class="book-background">
+                <img src="images/book3.png" alt="" >
+            </div>
+
+            <div class="bucketlist-content row">
+                <div class="content content-left center-flex rightalign">
+                    <div class="book-left right">
+                        <h1>our little bucketlist</h1>
+                        <p class="teensietiny">to add to bucketlist, go text ur sweet laura please!!</p>
+                        <div class="list">
+                            <p class="leftalign">☐ the bern</p>
+                            <p class="leftalign">☐ make matching rings from the bars!!</p>
+                            <p class="leftalign">☐ kevin no back pain hehe</p>
+                            <p id="inttrip" class="leftalign checked">☑ first international trip together</p>
+                            <p class="leftalign">☐ kevin gets return offer from amazon wahoooo</p>
+                            <p class="leftalign">☐ full time jobs in the same city</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content content-right center-flex">
+                    <div class="book-right left center-flex flex-row">
+                        <p id="text" class="">hover over any completed bucketlist item to reveal memories!!!</p>
+                        <div id="inttrip1" class="flex-column hidden">
+                            <img src="images/jungsik.jpg" alt="" >
+                            <img src="images/jungsikdessert.JPG" alt="" >
+                            <img src="images/reggie.JPG" alt="" >
+                        </div>
+                        <div id="inttrip2" class="flex-column hidden">
+                            <img src="images/orangedessert.JPG" alt="" >
+                            <img src="images/fushimiinar.jpg" alt="" >
+                            <img src="images/tokyo.jpg" alt="" >
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

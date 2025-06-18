@@ -1145,6 +1145,19 @@ img.heart {
     margin-bottom: 0.5em;
 }
 
+.book-background {
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    position: absolute;
+}
+
+.book-background img {
+    height: 100vh;
+    width: fit-content;
+}
+
+
 @keyframes bucketlist {
     0%   {transform: translate(0,0) rotate(0);}
     50% {transform: translate(0px,-30px) rotate(1deg);}
@@ -1160,23 +1173,80 @@ img.heart {
     80%   {transform: translate(0,0) rotate(0);}
 }
 
-.bucketlist h1 {
+.bucketlist-content h1 {
     animation: bucketlist 3s infinite;
 }
 
-.bucketlist .teensietiny {
+.bucketlist .content {
+    height: 100vh;
+    width: 100%;
+}
+
+.bucketlist .content-left {
+    /* padding-left: 20vw; */
+    padding-right: 3vh;
+}
+
+.bucketlist .book-left {
+    max-width: 43vh;
+}
+
+.bucketlist .book-right {
+    max-width: 43vh;
+    height: 100vh;
+    grid-column: 1 /2;
+}
+
+.bucketlist .content-right {
+    padding-left: 4vw;
+    /* padding-right: 20vw; */
+}
+
+.bucketlist-content .teensietiny {
     font-size: small;
 }
 
 .bucketlist .list {
     font-size: 3ex;
     margin-top: 1em;
-    margin-left: 30%;
+
 }
 
 .bucketlist .list .checked {
     color: green;
 }
+
+.bucketlist .book-vimage {
+    height: 25vh;
+}
+
+.bucketlist .book-himage {
+    height: 15vh;
+}
+
+.bucketlist .book-image img {
+    height: 95%;
+    padding: 1vh;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+.flex-column {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.flex-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
 
 @media (max-width: 1000px) {
     .smallcontent {
