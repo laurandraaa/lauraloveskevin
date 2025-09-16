@@ -1036,6 +1036,7 @@ img.grass {
     width: 50%;
     height: fit-content;
     margin: auto;
+    margin-top: 2.5em;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
